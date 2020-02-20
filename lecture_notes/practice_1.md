@@ -169,7 +169,7 @@ df['fuel type'].unique()
 Get number of unique items>
 
 ```python
-df['fuel type'].unique()
+df['fuel type'].nunique()
 ```
 
 Built in aggregations>
