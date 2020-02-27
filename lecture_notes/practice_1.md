@@ -61,7 +61,7 @@ df.tail() # has a default parameter of 5 for first argument controlling the numb
 Get a sample of the data>
 
 ```python
-df.sample() # has a default parameter of 5 for first argument controlling the sample size
+df.sample() # has a default parameter of 1 for first argument controlling the sample size
 ```
 
 
@@ -91,7 +91,6 @@ df.index
 
 #### Read and search
 
-sum, avg, aggregate, add column, drop column,modify single cell, groupby, apply, distinct count, append
 
 Get a single row by position>
 
