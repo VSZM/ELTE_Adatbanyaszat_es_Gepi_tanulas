@@ -155,7 +155,7 @@ Saving figures>
 plt.savefig('figure.png')
 ```
 
-#### Excercise
+### Excercise
 
 These exercises rely on the fuel data from [practice 1](practice_1.md). 
 
