@@ -38,7 +38,6 @@ Books for helping with the theory
 - _Introduction to Data Mining_ by Pang Ning Tan, Michael Steinbach, Anuj Karpatne and Vipin Kumar. [Free here](https://www-users.cs.umn.edu/~kumar001/dmbook/index.php#item3)
 - _A General Introduction to Data Analytics_ by João Mendes Moreira, André C. P. L. F. de Carvalho and Tomáš Horváth [Buy here](https://www.wiley.com/en-us/A+General+Introduction+to+Data+Analytics-p-9781119296263)
 
-
 ### **Credits**
 
 Credits are due to João Mendes Moreira, Tomáš Horváth and Krisztian Buza for allowing me to use their slides for the creation of these slides. 
