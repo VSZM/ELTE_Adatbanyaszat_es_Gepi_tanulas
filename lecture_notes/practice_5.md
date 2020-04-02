@@ -131,7 +131,7 @@ from sklearn.metrics import silhouette_score
 score = silhouette_score(simple_df[['Distance_Feature', 'Speeding_Feature']], simple_df['Cluster'])
 ```
 
-### **Excercise**
+### **Exercise**
 
 1. Find the best parameters for DBSCAN on the convex dataset based on Within-groups sum of squares evaluation method! Visualize the clustered data!
 

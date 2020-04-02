@@ -220,7 +220,7 @@ plt.axis("off")
 ![Wordcloud](assets/wordcloud.png)
 
 
-### **Excercise**
+### **Exercise**
 
 1. Create a wordcloud of the House Addresses!
 

@@ -82,7 +82,7 @@ ax = sns.barplot(x=grouped_by_ac.index.values, y=grouped_by_ac['date'].values)
 ax.set(xlabel='Air conditioning status', ylabel='Ratio %', title='Ratio of air conditioned travels')
 ```
 
-![Line chart](assets/line.png)
+![Line chart](assets/bar.png)
 
 
 **Line chart**
@@ -155,7 +155,7 @@ Saving figures>
 plt.savefig('figure.png')
 ```
 
-### Excercise
+### **Exercise**
 
 These exercises rely on the fuel data from [practice 1](practice_1.md). 
 

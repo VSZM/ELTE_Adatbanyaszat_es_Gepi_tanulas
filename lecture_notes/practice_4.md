@@ -160,7 +160,7 @@ principal_df['road'] = df['road']
 principal_df
 ```
 
-### **Excercise**
+### **Exercise**
 
 
 1. Visualize the difference between the effectiveness of PCA and Attribute selection! Hint: Use a scatterplot to visualize how well are both methods seperating the *road* target attribute.

@@ -224,7 +224,7 @@ df = df.drop('enjoyed the ride', axis = 1)
 
 
 
-#### Excercise
+#### Exercise
 
 1. Split the date to Year, Month, Date columns!
 
