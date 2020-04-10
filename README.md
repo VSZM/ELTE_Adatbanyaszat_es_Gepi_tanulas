@@ -13,7 +13,7 @@ I will put the presentation slides here each week, along with the notes to help 
 
 Consultation hours are on Thursday 10-12. You can find me on the 7th floor of the Northern building in room 7.25.
 
-For questions and out of hours consultation write me an email : wayasam at gmail
+For questions and out of hours consultation write me an **email : wayasam at gmail**
 
 
 ### **Recommended learning material**
