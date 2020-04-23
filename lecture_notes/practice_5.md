@@ -1,4 +1,4 @@
-# Clustering
+# **Clustering**
 
 In this practical we will be using 2 new datasets for clustering. The datasets can be found in the [github repository](https://github.com/VSZM/ELTE_Adatbanyaszat_es_Gepi_tanulas/tree/master/practice). 
 
@@ -49,7 +49,7 @@ This one seems hard. The problem is that the two clusters have very different de
 The most popular clustering algorithms are all defined in Scikit Learn. Take a look at the API for a [comparative gallery](https://scikit-learn.org/stable/modules/clustering.html). We will be using this on our course. 
 
 
-Let's use the Kmeans clustering algorithm on the convex dataset>
+Let's use the **Kmeans clustering** algorithm on the convex dataset>
 
 ```python
 from sklearn.cluster import KMeans
@@ -65,7 +65,7 @@ sns.scatterplot(data=simple_df, x='Distance_Feature', y='Speeding_Feature', hue=
 
 ![Convex Dataset KMeans](assets/kmeans.png)
 
-Let's use the DBScan on the nonconvex dataset>
+Let's use the **DBScan** on the nonconvex dataset>
 
 ```python
 from sklearn.cluster import DBSCAN
@@ -82,7 +82,7 @@ sns.scatterplot(data=concave_df, x='X', y='Y', hue='Cluster', palette='viridis')
 
 *Note: As we can see the dbscan could not find the 2 classes. We may need to adjust the parameters or use an even more sophisticated algorithm.*
 
-Let's use the Agglomerative Hierarchical Clustering on the non-convex dataset>
+Let's use the **Agglomerative Hierarchical Clustering** on the non-convex dataset>
 
 ```python
 from sklearn.cluster import AgglomerativeClustering
@@ -123,7 +123,7 @@ ax.set(xlabel='N', ylabel='Within-groups sum of squares', title='Elbow Curve')
 *Note: Observe that the "elbow" is bent at 2*.
 
 
-Another metric is Silhouette score. Let's see the score for the DBScan run on the non-convex dataset>
+Another metric is **Silhouette score**. Let's see the score for the DBScan run on the non-convex dataset>
 
 ```python
 from sklearn.metrics import silhouette_score

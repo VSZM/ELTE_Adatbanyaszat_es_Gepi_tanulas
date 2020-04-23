@@ -1,4 +1,4 @@
-# Data Preprocessing
+# **Data Preprocessing**
 
 In this practical we will be using a new dataset, the fuel dataset with errors. The dataset can be found in the [github repository](https://github.com/VSZM/ELTE_Adatbanyaszat_es_Gepi_tanulas/tree/master/practice)
 

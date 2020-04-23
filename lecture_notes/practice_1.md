@@ -1,6 +1,6 @@
-# Extract-Transform-Load (ETL) in Python with Pandas
+# **Extract-Transform-Load (ETL) in Python with Pandas**
 
-#### Install pandas
+### **Install pandas**
 
 As with any libary pandas has to be installed first. In the command line issue>
 
@@ -9,16 +9,16 @@ pip install pandas
 ```
 
 
-#### Pandas
+### **Pandas**
 
 Pandas is a data analysis and manipulation tool. [Link](https://pandas.pydata.org/)
 
-#### Download data
+### **Download data**
 
 We will be using the Fuel Dataset. [Download](https://raw.githubusercontent.com/VSZM/ELTE_Adatbanyaszat_es_Gepi_tanulas/master/practice/fuel_data.txt)
 
 
-#### Import
+### **Import**
 
 Before using pandas we must import it>
 
@@ -26,7 +26,7 @@ Before using pandas we must import it>
 import pandas as pd
 ```
 
-#### Read data
+### **Read data**
 
 Read the previously downloaded fuel data>
 
@@ -36,13 +36,13 @@ df = pd.read_csv('practice/fuel_data.txt', delimiter='\t')
 
 We can read all kinds of data, like sql, json, excel as well. Check documentation for more details.
 
-#### Pandas main types
+### **Pandas main types**
 
 *Series*: Series is a serial container. It can represent lists, columns of data, etc. 
 
 *DataFrame*: DataFrame is a tabular container. It can represent SQL tables, Excel files, etc. 
 
-#### Explore data
+### **Explore data**
 
 We can inspect the DataFrame contents with a lot of commands.
 
@@ -89,7 +89,7 @@ Show index of the DataFrame>
 df.index
 ```
 
-#### Read and search
+### **Read and search**
 
 
 Get a single row by position>
@@ -156,7 +156,7 @@ for row in df.iterrows():
 # Here we see that row will be a 2-tuple. The first part is the index of the row, the second part is a dictionary representing the row data where the keys are the column names.
 ```
 
-#### Transformations, Aggregations, Groups
+### **Transformations, Aggregations, Groups**
 
 
 Get unique values of a column>
@@ -195,7 +195,7 @@ df.groupby('road')['starttemp'].min()
 df.groupby(['road', 'air conditioner'])['starttemp'].min()
 ```
 
-#### Modifying the Data
+### **Modifying the Data**
 
 Add row to the DataFrame>
 
@@ -224,7 +224,7 @@ df = df.drop('enjoyed the ride', axis = 1)
 
 
 
-#### Exercise
+### **Exercise**
 
 1. Split the date to Year, Month, Date columns!
 

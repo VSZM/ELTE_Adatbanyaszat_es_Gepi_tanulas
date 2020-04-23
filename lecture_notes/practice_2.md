@@ -1,4 +1,4 @@
-# Descriptive Statistics and Visualization
+# **Descriptive Statistics and Visualization**
 
 For the examples in this note I will use the following DataFrame (which is the same as on the slides)>
 
@@ -17,7 +17,7 @@ df['Height'] = [175,195,172,180,168,173,180,165,158,163,190,172,185,192]
 
 > All of the statistic metrics covered in the lecture could be calculated manually using DataFrame's groupby and apply methods and maybe some for cycles. This approach is good for practice, however pandas has most of these statistic metrics built-in. I will use the built-in methods show possible. 
 
-Let's calculate the frequencies for height. 
+**Let's calculate the frequencies for height.**
 
 First we do a group by based on height, then we calculate each column one by one>
 
@@ -35,12 +35,12 @@ dua['Relative Cumulative Frequency'] = dua['Absolute Cumulative Frequency'].appl
 
 ### **Visualization**
 
-For visualization in python we use matplotlib. See the [gallery](https://matplotlib.org/gallery.html) to get an overview of it's capabilities. 
+For visualization in python we use matplotlib. See the [gallery](https://matplotlib.org/gallery.html) to get an overview of it's capabilities.
 
 Another great library is Seaborn. It is built on top of matplotlib. See the [gallery](https://seaborn.pydata.org/examples/index.html) for it's capabilities.
 
 
-First import the necessary libraries and the data from [practice 1](practice_1.md)>
+**First import the necessary libraries and the data from [practice 1](practice_1.md)>**
 
 ```python
 import matplotlib.pyplot as plt
@@ -129,7 +129,7 @@ sns.distplot(df["dist"])
 ![Histogram1](assets/histogram.png)
 
 
-Another version is to put the travel distances in a range>
+**Another version is to put the travel distances in a range>**
 
 ```python
 import numpy as np

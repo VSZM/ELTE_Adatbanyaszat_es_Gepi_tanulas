@@ -1,5 +1,5 @@
 
-# Regression Part 2
+# **Regression Part 2**
 
 Today we will look at what to do when the relation between the target and the predictors is not linear. For this we will use a synthetic dataset. Lets load the data and see what it looks like>
 

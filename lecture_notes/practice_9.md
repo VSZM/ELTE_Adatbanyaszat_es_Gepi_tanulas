@@ -1,5 +1,5 @@
 
-# Classification Continued
+# **Classification Continued**
 
 **Today we look at two new Classification Algorithms. Decision Tree and Support Vector Machine. For this we will use a new synthetic dataset *clustering_classification.csv*. Lets load the data>**
 
@@ -572,3 +572,8 @@ print(f'Validation accuracy is {model4_accuracy} for model SVC(C=0.7978947368421
     
 
 **As we can see the best model is the RBF kernel based Support Vector Machine, but Decision Tree is also a very strong competitor despite it's simplicity**
+
+
+### **Exercise**
+
+Try to do the exercises from the previous practice but with the new models learned today. Tune each model using a test set and compare their predictive performance on a validation set.

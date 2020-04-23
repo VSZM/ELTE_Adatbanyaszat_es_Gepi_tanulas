@@ -1,5 +1,5 @@
 
-# Regression
+# **Regression**
 
 In today's lesson we will be using the Fuel dataset and the house pricing dataset. Lets import the fuel data>
 
@@ -194,7 +194,7 @@ sqrt(mean_squared_error(y_test, y_pred)), mean_absolute_error(y_test, y_pred)
 
 
 
-Let's visualize the model and compare it to the data points>
+**Let's visualize the model and compare it to the data points>**
 
 
 ```python
@@ -218,7 +218,7 @@ plt.plot(interval, y_interval, color='r')
 ![Linear Regression](assets/linear_regression_vs_data.png)
 
 
-From physics we know that `s = v * t`. So let's use the `speed` column as well to improve our model>
+**From physics we know that `s = v * t`. So let's use the `speed` column as well to improve our model>**
 
 
 ```python
@@ -242,7 +242,7 @@ sqrt(mean_squared_error(y_test, y_pred)), mean_absolute_error(y_test, y_pred)
 
 
 
-Let's see if there are any other highly correlated attributes we could use for improving the accuracy of estimating the distance>
+**Let's see if there are any other highly correlated attributes we could use for improving the accuracy of estimating the distance>**
 
 
 ```python
@@ -255,7 +255,7 @@ sns.heatmap(fuel_df.corr(), annot=True)
 ![Correlation Heatmap](assets/practice_6_corr_heatmap.png)
 
 
-Based on the above heatmap we can try and add `num. persons` attribute and see if that helps>
+**Based on the above heatmap we can try and add `num. persons` attribute and see if that helps>**
 
 
 ```python

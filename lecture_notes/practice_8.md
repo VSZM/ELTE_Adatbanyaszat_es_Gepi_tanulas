@@ -1,5 +1,5 @@
 
-# Classification
+# **Classification**
 
 Today we learn about classification. Let's load the [Iris dataset](https://scikit-learn.org/stable/datasets/index.html#iris-dataset) first. This time we will be using the sklearn [datasets package](https://scikit-learn.org/stable/datasets/index.html)>
 
@@ -10,7 +10,7 @@ from sklearn import datasets
 iris = datasets.load_iris()
 ```
 
-Let's split the data into train and test sets>
+**Let's split the data into train and test sets>**
 
 
 ```python
@@ -22,7 +22,7 @@ y = iris.target
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 42)
 ```
 
-First we try the [K Nearest Neighbor classifier](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html). The single most important hyper parameter of this model is the K value of neighbors to consider when classifying a new object. Let's set it to 3 for now.>
+**First we try the [K Nearest Neighbor classifier](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html). The single most important hyper parameter of this model is the K value of neighbors to consider when classifying a new object. Let's set it to 3 for now.>**
 
 
 ```python
@@ -41,7 +41,7 @@ model.fit(X_train, y_train)
 
 
 
-After fitting the model we can print a report about the performance of our model using [Classificaton Report](http://scikit-learn.org/stable/modules/generated/sklearn.metrics.classification_report.html)>
+**After fitting the model we can print a report about the performance of our model using [Classificaton Report](http://scikit-learn.org/stable/modules/generated/sklearn.metrics.classification_report.html)>**
 
 
 ```python
@@ -64,9 +64,9 @@ print(classification_report(y_test, y_pred))
     
     
 
-As we can see this problem was very easy, so we could achive 100 % precision on it. 
+As we can see this problem was very easy, so we could achive 100 % precision on it.
 
-Let's load a bit more complicated dataset, the [Breast Cancer dataset](https://scikit-learn.org/stable/datasets/index.html#breast-cancer-dataset)>
+**Let's load a bit more complicated dataset, the [Breast Cancer dataset](https://scikit-learn.org/stable/datasets/index.html#breast-cancer-dataset)>**
 
 
 ```python
@@ -202,7 +202,7 @@ y = breast_cancer.target
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 42)
 ```
 
-After splitting the data we create a [Logistic Regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html) model this time> 
+**After splitting the data we create a [Logistic Regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html) model this time>**
 
 
 ```python
@@ -243,7 +243,7 @@ print(classification_report(y_test, y_pred))
 
 As we can see this problem is also quite easy. We didn't even have to include polynomial synthetic features, a simple linear regression solved the problem very well.
 
-Nevertheless let us try KNN on this problem as well and see how it performs with K = 5.
+**Nevertheless let us try KNN on this problem as well and see how it performs with K = 5.>**
 
 
 ```python
@@ -281,7 +281,7 @@ print(classification_report(y_test, y_pred))
 
 However the results are already very good we can try and optimize the hyperparameters of our model.
 
-Scikit Learn provides tools for this, one of the most commonly used is [Grid Search](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html). This is an exhaustive search implementation that will try out all the given possible parameters and see which performs the best.>
+**Scikit Learn provides tools for this, one of the most commonly used is [Grid Search](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html). This is an exhaustive search implementation that will try out all the given possible parameters and see which performs the best.>**
 
 
 ```python
@@ -308,7 +308,7 @@ grid.fit(X_train, y_train)
 
 
 
-The best parameter settings are stored in the grid object's `best_params_` attribute>
+**The best parameter settings are stored in the grid object's `best_params_` attribute>**
 
 
 ```python
@@ -343,7 +343,7 @@ print(classification_report(y_test, y_pred))
     
     
 
-# **Exercise**
+### **Exercise**
 
 1. Load the fuel Dataset and try to predict the used fuel type based on arbitrary predictor attributes and your choice of model! Try to optimize the hyperparameters of your model if needed! (Don't forget to label encode the target attribute and do numerical transformation of predictors where applicable)
 2. Like in the previous task try to predict the air conditioner attribute of the duel dataset! 

@@ -1,4 +1,4 @@
-# Descriptive Multivariate Analysis
+# **Descriptive Multivariate Analysis**
 
 For the examples here I will use the USA housing prices dataset. [Download link](https://www.kaggle.com/vedavyasv/usa-housing/download)
 
@@ -86,7 +86,7 @@ figsize(10, 10)
 
 We can increase the dimensionality with a lot of tricks. Below I represent a few of these. 
 
-**Add quantitative dimension** by changing the size of data points based on an attribute>
+**Add quantitative dimension by changing the size of data points based on an attribute>**
 
 ```python
 fuel_df['duration_minutes'] = fuel_df['duration']
@@ -98,7 +98,7 @@ sns.scatterplot(x='duration_minutes', y='dist', size='avg.cons.', data=fuel_df)
 
 ![Quantitative dimension increase](assets/quantitative_add.png)
 
-**Add qualitative dimension** by changing the colour and shape of data points>
+**Add qualitative dimension by changing the colour and shape of data points>**
 
 ```python
 sns.scatterplot(x='duration_minutes', y='dist', hue='fuel type', style='fuel type', data=fuel_df)
@@ -108,7 +108,7 @@ sns.scatterplot(x='duration_minutes', y='dist', hue='fuel type', style='fuel typ
 ![Qualitative dimension increase](assets/qualitative_add.png)
 
 
-Combine the previous approaches to express 5 dimension on a 2d image>
+**Combine the previous approaches to express 5 dimension on a 2d image>**
 
 ```python
 sns.scatterplot(x='duration_minutes', y='dist', hue='fuel type', 
