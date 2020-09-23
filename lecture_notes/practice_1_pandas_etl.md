@@ -252,4 +252,4 @@ df = df.drop('enjoyed the ride', axis = 1)
 
 [Cheatsheet](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)
 
-[A not so 10 minute tutorial](https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html#min)
+[A not so 10 minute tutorial](https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html)
