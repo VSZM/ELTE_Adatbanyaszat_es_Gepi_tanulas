@@ -157,7 +157,7 @@ plt.savefig('figure.png')
 
 ### **Exercise**
 
-These exercises rely on the fuel data from [practice 1](practice_1.md). 
+These exercises rely on the fuel data from [practice 1](practice_1_pandas_etl.md). 
 
 1. Show the absolute frequencies of road types on a Pie Chart!
 
