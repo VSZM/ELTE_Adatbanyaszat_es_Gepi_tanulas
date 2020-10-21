@@ -9,6 +9,7 @@ Load the data>
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
+import numpy as np
 %matplotlib inline
 
 
@@ -21,13 +22,13 @@ df.head()
 
 ### **Data Quality**
 
-Check if there are any missing values in *starttemp*>
+Check if there are any missing values in any of the columns>
 
 ```python
-df['starttemp'].isnull().sum()
+df.isnull().sum()
 ```
 
-Add the mean value where *starttemp* is missing>
+Fill the missing values of *starttemp* with the mean of the column where the value is missing>
 
 ```python
 df['starttemp'][df['starttemp'].isnull()] = df['starttemp'].mean()
@@ -42,7 +43,7 @@ route_to_distance = df.groupby('route')['dist'].mean()
 distances = []
 # iterating through all the rows and checking if any of the distances are missing. 
 for row in df.to_dict(orient='records'):
-    if row['dist'] == None:
+    if np.isnan(row['dist']):
         distances.append(route_to_distance[row['route']])
     else:
         distances.append(row['dist'])
@@ -50,10 +51,10 @@ for row in df.to_dict(orient='records'):
 df['dist'] = distances
 ```
 
-Check data inconsistency in Air conditioner> # Hint group by count, but let them solve
+Check data inconsistency in Air conditioner> 
 
 ```python
-df.groupby('air conditioner').count()['date']
+df.['air conditioner'].value_counts()
 ```
 
 Fix in in air conditioner>
@@ -84,7 +85,8 @@ df = df.drop_duplicates()
 Convert the ordinal *trafic* column to a quantitative one>
 
 ```python
-df['trafic'].map()
+print(df['trafic'].value_counts())
+df['trafic'] = df['trafic'].map({'low': 0, 'normal': 1, 'high': 2, 'traffic jam + normal': 3, 'traffic jam': 3})
 ```
 
 Label encode the *road* column using [Sklearn's LabelEncoder](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.LabelEncoder.html)>
@@ -102,7 +104,8 @@ df.head()
 One Hot Encode the *road* column>
 
 ```python
-pd.get_dummies(df['road'], prefix='road')
+indicators = pd.get_dummies(df['road'], prefix='road')
+df = df.join(indicators, how='inner')
 ```
 
 Normalize the *avg.cons.* column using the min-max scaling>
@@ -147,7 +150,7 @@ from sklearn.preprocessing import StandardScaler
 df['duration_minutes'] = df['duration'].apply(lambda time: int(time.split(':')[0]) * 60 + int(time.split(':')[1]))
 
 # selecting the predictors into X
-X = df[['duration_minutes', 'starttemp', 'endtemp', 'dist', 'num. persons', 'speed', 'avg.cons.', ]].values
+X = df[['duration_minutes', 'starttemp', 'dist', 'num. persons', 'speed', 'avg.cons.', ]].values
 # Scaling the variables 
 X = StandardScaler().fit_transform(X)
 
